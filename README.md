@@ -1,4 +1,18 @@
 
+# Nginx Reverse Proxy  
+
+## What is Nginx  
+
+- Nginx is an open source high performance web server (stores, processes and delivers web pages to users) that powers many modern web applications.
+
+## What is a forward proxy?  
+- A forward proxy, often called a proxy, proxy server, web proxy, is a server that sits in front of a group of client machines
+- When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like an intermediary.
+
+## What is a reverse proxy?  
+Reverse proxies control access to a server on private networks. A reverse proxy can perform authentication tasks, as well as cache or decrypt data.
+
+
 ## Multi-Machine Vagrant 
 
 ```

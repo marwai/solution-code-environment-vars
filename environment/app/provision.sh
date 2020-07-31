@@ -18,7 +18,8 @@ sudo apt-get install python-software-properties
 sudo su
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo su
-sudo apt-get install nodejs -y
+cd
+apt-get install nodejs -y
 
 # install pm2
 sudo npm install
@@ -27,5 +28,4 @@ sudo npm install
 export DB_HOST="mongodb://192.168.10.150:27017/posts"
 cd /home/ubuntu/app
 sudo su
-npm install
 node app.js
