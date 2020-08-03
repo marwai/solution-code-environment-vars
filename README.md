@@ -9,19 +9,28 @@
 - A forward proxy, often called a proxy, proxy server, web proxy, is a server that sits in front of a group of client machines
 - When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like an intermediary.
 
+
 ## What is a reverse proxy?  
 Reverse proxies control access to a server on private networks. A reverse proxy can perform authentication tasks, as well as cache or decrypt data.
 
 
+
 ## Multi-Machine Vagrant 
 
+## Instructions
+1. Clone or fork the repo 
+2. Vagrant up
+3. In you browser run development.local:3000 to check if link is working with port
+4. Run development.local/fibonacci/7 to check if fibonacci is working
+5. Run development.local/posts 
+
+### Instructions manually if problems occurs
 ```
 Vagrant up 
 vagrant ssh app
-nano /etc/nginx/sites-default 
-cd sites-available 
+cd /etc/nginx/sites-default 
 nano default 
-sudo rm -r default 
+sudo rm -r default
 ls - nothhing in sites avaiable
 touch default - make again
 sudo touch default 
