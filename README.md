@@ -54,8 +54,10 @@ sudo rm -r default
 7. Check to see files present in site available, there should be no files. Run "ls -a".
 ls lists all the files. -a includes all the hidden files too. 
 ```
-ls - a nothhing in sites avaiable
+ls - a 
 ```
+No files will be in sites available 
+
 
 8. 'touch filename' to make a new default folder:
 ```
@@ -63,7 +65,7 @@ touch default
 ``` 
 - make again
 
-9. Incase admin priveleges are required, add sudo 
+9. In case admin privileges are required, add sudo 
 ```
 sudo touch default 
 ```
@@ -87,19 +89,21 @@ server {
 }
 
 cntrl s 
-
-
-sugo nginx -t 
-
-sudo systemctl restart nginx 
-
-sudo systemctrl status nginx
-
-# node app.js starts the node 
-sudo node app.js
-
 ```
-
+11. The next command will reset the configuration and test it:
+```
+sudo nginx -t 
+```
+12. Changes to nginx means the system has to be restarted:
+```
+sudo systemctl restart nginx 
+sudo systemctrl status nginx
+```
+13. Go back to the OS
+# node app.js starts the node 
+```
+ node app.js
+```
 
 
 11. Finally check the browser
