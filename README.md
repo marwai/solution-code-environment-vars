@@ -112,7 +112,7 @@ development.local:3000
 development.local:3000/fibonacci/7
 ```
 ## Automation Bash Scripts 
-
+1. 
 ```
 sudo unlink /etc/nginx/sites-enabled/default
 cd /etc/nginx/sites-available
@@ -132,9 +132,29 @@ sudo apt-get install git -y
 
 ```
 __The code above will be broken down for explanation__
+
 ```
 sudo unlink /etc/nginx/sites-enabled/default
 ```
+
+```Unlink``` removes the symlink from the default file so it is no longer in use
+
+```
+cd /etc/nginx/sites-available
+```
+Navigates to the folder to create a new file
+
+```
+sudo touch reverse-proxy.conf
+```
+Creates the reverse-proxy configuration file 
+
+```
+chmod 666
+```
+Changes the file permission to have read and write access but not executable
+
+
 
 # Error 
 
