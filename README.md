@@ -60,7 +60,8 @@ ls - a nothhing in sites avaiable
 8. 'touch filename' to make a new default folder:
 ```
 touch default
-``` - make again
+``` 
+- make again
 
 9. Incase admin priveleges are required, add sudo 
 ```
