@@ -17,15 +17,21 @@ Reverse proxies control access to a server on private networks. A reverse proxy 
 
 ## Multi-Machine Vagrant 
 
-## Instructions
+## Todo 
 1. Clone or fork the repo 
 2. Vagrant up in the terminal 
 3. In you browser run development.local:3000 to check if link is working with port
 4. Run development.local/fibonacci/7 to check if fibonacci is working
 5. Run development.local/posts 
 
-### Instructions 
+### Instructions
+ 
 1. First navigate to the directory with the vagrantfile, using cd to move into a directory and cd .. to move back 
+``` 
+cd solution-code-environment-vars
+```	
+navigate to /solution-code-environment folder using code above 
+
 
 ![Vagrant overview](/images/vagrant overiew)
 
