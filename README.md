@@ -24,7 +24,7 @@ Reverse proxies control access to a server on private networks. A reverse proxy 
 4. Run development.local/fibonacci/7 to check if fibonacci is working
 5. Run development.local/posts 
 
-### Instructions manually if problems occurs
+### Instructions 
 1. First navigate to the directory with the vagrantfile, using cd to move into a directory and cd .. to move back 
 
 ![Vagrant overview](/images/vagrant overiew)
@@ -106,11 +106,34 @@ sudo systemctrl status nginx
 ```
 
 
-11. Finally check the browser
+14. Finally check the browser
 ```
-development.local/
-development.local/fibonacci/7
-development.local/posts
+development.local:3000
+development.local:3000/fibonacci/7
+```
+## Automation Bash Scripts 
+
+```
+sudo unlink /etc/nginx/sites-enabled/default
+cd /etc/nginx/sites-available
+sudo touch reverse-proxy.conf
+sudo chmod 666 reverse-proxy.conf
+echo "server{
+  listen 80;
+  location / {
+      proxy_pass http://192.168.10.100:3000;
+  }
+}" >> reverse-proxy.conf
+sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
+sudo service nginx restart
+
+# install git
+sudo apt-get install git -y
+
+```
+__The code above will be broken down for explanation__
+```
+sudo unlink /etc/nginx/sites-enabled/default
 ```
 
 # Error 
