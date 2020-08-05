@@ -125,7 +125,7 @@ Follow [installation guide](https://github.com/marwai/vb_vagrant_installtion) fo
     $ development.local:3000
     $ development.local:3000/fibonacci/7
     ```
-## Automation Bash Scripts 
+## Automation reverse proxy in a development environment
 1.0 
   
         $ sudo unlink /etc/nginx/sites-enabled/default
