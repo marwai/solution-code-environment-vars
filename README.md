@@ -41,7 +41,7 @@ Follow [installation guide](https://github.com/marwai/vb_vagrant_installtion) fo
     # navigate to /solution-code-environment folder using code above 
     ```
 
-    ![Vagrant overview](/images/vagrant overiew)
+![Vagrant overview](images/vagrant_overiew.PNG)
 
 2. Once you have navigated to the correct directory run 'vagrant up' in the terminal 
     ```
@@ -306,24 +306,24 @@ This was fixed through:
 $ sudo su
 $ npm install pm2 -g # in the code app root 
 
-```
+
 ## After Vagrant up db, another error is thrown. Despite using the same code given in class, it was unable to connect to mongodb 
 ## __MONGODB__ error
-```
- db: E: Failed to fetch https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.2/multiverse/
-binary-amd64/mongodb-org-server_3.2.20_amd64.deb  Hash Sum mismatch
-    db:
-    db: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-    db: rm:
-    db: cannot remove '/etc/mongod.conf'
-    db: : No such file or directory
-    db: Failed to restart mongod.service: Unit mongod.service not found.
-    db: Failed to execute operation: No such file or directory
-The SSH command responded with a non-zero exit status. Vagrant
-assumes that this means the command failed. The output for this command
-should be in the log above. Please read the output to determine what
-went wrong.
-```
+
+     db: E: Failed to fetch https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.2/multiverse/
+    binary-amd64/mongodb-org-server_3.2.20_amd64.deb  Hash Sum mismatch
+        db:
+        db: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+        db: rm:
+        db: cannot remove '/etc/mongod.conf'
+        db: : No such file or directory
+        db: Failed to restart mongod.service: Unit mongod.service not found.
+        db: Failed to execute operation: No such file or directory
+    The SSH command responded with a non-zero exit status. Vagrant
+    assumes that this means the command failed. The output for this command
+    should be in the log above. Please read the output to determine what
+    went wrong.
+
 ![Posts_image](images/Posts_image.png)
 
 
